@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+body.homepage {
+  background: url(Index_background.jpg), rgb(79, 3, 145);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  background: rgb(71, 16, 71);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+.logo {
+  font-size: 27px;
+  font-family: "Hanalei Fill", cursive;
+}
+nav .navbars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 10px;
+}
+nav ul li a.effects {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+nav ul li a:hover.effects {
+  text-decoration: none;
+  transition: 0.5s;
+  background: cyan;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px cyan;
+}
+nav .actionbutton .searchbox {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+nav .actionbutton .searchbox i {
+  font-size: 1.2em;
+  margin: 5px;
+  color: black;
+}
+nav .actionbutton .searchbox input {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: black;
+}
+.controller {
+  padding: 20px;
+  height: 160px;
+  width: 160px;
+  border-radius: 80%;
+}
+.active {
+  font-size: 20px;
+}
+nav.line {
+  transition: 0.5s;
+  padding: 10px;
+  margin-top: 180px;
+  background: rgb(117, 6, 115);
+}
+h1.title {
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  background: rgb(52, 16, 48);
+  position: relative;
+  opacity: 80%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+    /* White glow */ 0 0 7px rgb(222, 222, 222),
+    0 0 10px rgb(222, 222, 222), 0 0 21px rgb(222, 222, 222),
+    /* Green glow */ 0 0 42px rgb(242, 70, 205), 0 0 82px rgb(242, 70, 205),
+    0 0 92px rgb(242, 70, 205), 0 0 102px rgb(242, 70, 205),
+    0 0 151px rgb(242, 70, 205);
+}
+.cardBg {
+  background: #000000;
+  border: 5px solid;
+  padding: 30px;
+  margin: auto;
+  width: 90%;
+  height: 500;
+}
+.carusel {
+  background: rgb(30, 30, 30);
+  border: 10px solid rgb(0, 0, 0);
+  margin: auto;
+  width: 90%;
+}
+h1.title-1 {
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  background: rgb(8, 0, 0);
+  position: relative;
+  opacity: 90%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+p.carusel-color {
+  color: whitesmoke;
+  font-family: "Russo One", sans-serif;
+}
+.anim {
+  animation: 2s ease-in 0.5s 1 slideInFromBottom;
+}
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 20%;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 10%;
+  }
+}
+.anim-fadeIn {
+  animation: 2s ease-out 1s 1 fadeIn;
+}

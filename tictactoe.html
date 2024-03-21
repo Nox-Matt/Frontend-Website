@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
+  </style>
+  <head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="gameStyle.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noxmourth || All About Gaming</title>
+  </head>
+  <header>
+    <!-- Navbars Section -->
+    <nav>
+      <ul class="navbars">
+        <img class="controller" src="NoxLogo.png" />
+        <a style="color: white; padding: 10px" class="logo">> Noxmourth</a>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="games.html" class="active">Games</a></li>
+        <li><a href="community.html" class="active">Community</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="aboutme.html" class="active">About Me</a></li>
+        <div class="actionbutton">
+          <div class="searchbox">
+            <a href="#"><i class="bx bxs-joystick-alt"></i></a>
+            <input style="border: none" type="text" placeholder="Search" />
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <nav class="line"></nav>
+  <div style="padding: 120px"></div>
+  <body>
+    <section>
+      <h1 class="game--title">Tic Tac Toe</h1>
+      <div class="game--container">
+        <div data-cell-index="0" class="cell"></div>
+        <div data-cell-index="1" class="cell"></div>
+        <div data-cell-index="2" class="cell"></div>
+        <div data-cell-index="3" class="cell"></div>
+        <div data-cell-index="4" class="cell"></div>
+        <div data-cell-index="5" class="cell"></div>
+        <div data-cell-index="6" class="cell"></div>
+        <div data-cell-index="7" class="cell"></div>
+        <div data-cell-index="8" class="cell"></div>
+      </div>
+      <h2 class="game--status"></h2>
+      <button class="game--restart">Restart Game</button>
+    </section>
+    <script src="tictactoe.js"></script>
+  </body>
+  <div style="padding: 60px"></div>
+  <!-- Section 4: Footer -->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <img style="width: 300px; height: 300px" src="FooterLogo.png" />
+      <section style="padding: 10px" class="mb-4">
+        <!-- Gmail -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          onclick="gmailFunction()"
+          role="button"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAATxJREFUSEvtluFNwzAQRl8ngBHYADYANoANYAJgAmACYALYADYAJqBswAiwAXpSLBnLTuK6oa3U+1U1uXv3ffFdMmNFMVsRly3435xfG6tPgOtO9i3w0mjBUVTvCpiHerHiA+AjAd0DJiwS5l5Eid/AcYDH4EvgLkOwy1PgayR9F3gGVJuGImzozzjdRLakCXZ7PsJ6YUKF58LHJ2c0OBTps76v8ZC/MNgCqfV7nUrPyFA0gS0erPf3Y4+1aSPN4CFlpeubAX4HDisllnKqFDv0jscTsDPQwA9w1p2B18y91eA3wNPrCt0vwD8BV66LxnleGjie5XgV+v8D4OYLMQnY4irTekNr05fJZGCBWm/kdvik4L5zthng0mvRcfJU10RJcfa1WBqXZYHjcdt+3tY8xrZ71+bztk1GRfYvlJRXHykZLbYAAAAASUVORK5CYII="
+          />
+        </a>
+        <script>
+          function gmailFunction() {
+            alert("andreasmatthew0271@gmail.com");
+          }
+        </script>
+        <!-- Instagram -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="https://www.instagram.com/_andreas.matt/?hl=en"
+          role="button"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAeNJREFUSEvlltsxREEQhr+NABEgAkSACBAAhQTIABEgApcEEAGePaDKOxkgAurbmtk6puacnbNnq5bSL3uZy9/999/d02NC1psQLr8eeBpYKGTnGfgYtrcpYsEOgHVgbthFyfobcA0c1TlRB7wCnFUAP4GnQvBFYCrs1YGN3NkcsJE+BtAbYB/wgjYm+AmwHM4upZHngD2wBwgqzW1tE/qivQTuAvhpCGBwVw7Y6GaB+REiFVRAbSecvw2f3lcLLM3vgMqUrpz5/1pl3dzLjp9bwEU4tBt08hV+z1TpTiNWVHp4D/g9tcOg9JxDrqni7UD1C/AQHLIUVwP1/bNtgCOoClcH5k/TQQWokgV2X9VinkcCll6VLqg1nTYIU6Q2BE+10Qk4RpuLKEYXqyHd0wnYLqSgftCVUGrpXWXK8G8CT4zqKC5FpXhy4noFFNlYxWU6Y9SCVsvJ3Fq7go69nKKOmhpIneLtaEMbSGyZbnai5Mw6NsLYUt173tDXi1qmQF2GROpobME2HoMaWNNYtHYd4l2s1VjUM+lzNHowjrc2DpiG49DHs2226elj3gTXVHKbp0+kVVBVHwdKI9Vx0cOqWCHFN1Rp1AKaKqdW9sVZ+q5WyaUvzSJ2SoFLIy3e9/+AvwFbBJcf5iwWnQAAAABJRU5ErkJggg=="
+          />
+        </a>
+
+        <!-- Linkedin -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="www.linkedin.com/in/andreas-matthew-698b8025b"
+          role="button"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARBJREFUSEvtl+0RwUAQhp90QAc6QAWoQAmoQAnoQAeohA7oAB3ogHlncmbnZmQS1iVm7J8kl7t7su9+zCWjJstq4tIocAvoOitxBS52z9jjDnB2hobt2sAtPMTgIbD/EngEHBoPngFbQCHQdfCBGqU9VkIIGGwKbFKAxbAJsQbmqcBKBkncA+SxSu1dKy31u4BX6yqBNdnGeALschU0HpSQGqd8ovJCYRlHX1AJbOt8CSyAFaB7mSBqCs/GYGAKk60CV3DgKPYxPK4Cd3DIdoH7pifHXdAdfDfy2jBo2L5zBSu5jnWAYzmTefwH/77Unv26UjklA9d22JOH6rtqDJ6mo23h8dYTVrhXo/4kknj9AOO5bx9DceH0AAAAAElFTkSuQmCC"
+          />
+        </a>
+
+        <!-- Github -->
+        <a
+          class="btn btn-outline-light btn-floating m-1"
+          href="https://github.com/Nox-Matt"
+          role="button"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAiZJREFUSEvllt01BUEQhOtGgAgQASJABkSACBABIkAEiIAMEAEiQASIgPPt2d7T2+Zndz3cB/1yz92dmerqrqnemeYUsznhagrwlqQFSett0s+SPiU9jiExFHhF0omkHUmLGQDA7yRdSiKZYtSAATmXtF87KLy/lnTcViK5tQRMKa9cSUdi603Sbo59DhjQ+0JZhyZB+bdT4ClgyguoieddarLfHIj20q5ba3/ZuxHLngKmP3sOhIwfJCEw3pEY4uFAguckCTu0wHP+P7kzbqJOIjCHvAZmqw5kIOlm2XdYDOtO7RH4QtJh2GCMx4BGxuztsY7AlGnZIdBfK+MYYGuHP4tWLNkhHjiV5UHb1zGgtpZ+cx19dNXzwFghavbR68tIdFh/hD3ca9yt59VHrUv5tTVnq+USBXYm6XQI8BRhWTKpG5IETpX6Lz1moNyGknTn+VKmMsQ4YD0lohFxRqeZ2EMkz6z1MYV1StFf3vtLBsIdtnuIIJizJFYKlIwBNQIKUTQQX26kb8PdqkDpSaC5Ei7wAOY2OslF0TLZRLZ8bRD0l2S8EaS8O3VnfQIky3XtIjcWYcZYM3HBCJVi8pGtHZbSB+8Yk1Si16acQcASEEqMOhFYLUgyzmwEBeivb7CSMwEOOxvobKaklDoVkTFMUXfyw69miQDRG+s5gLk93h7pKVrJ3oIasDGDPQnwS69TQUsAYqbb10m2PUOBa/0d/f7/Af8A+YtyH9j17mQAAAAASUVORK5CYII="
+          />
+        </a>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022 Copyrighted By:
+      <a class="text-white" href="#">Andreas Matthew</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</html>
